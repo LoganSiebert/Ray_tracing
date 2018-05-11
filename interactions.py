@@ -68,7 +68,7 @@ def transmission_coefficient(rayon):
         Z1 = sqrt(U0/EPS_0)
         Z2 = sqrt(U0/mur.epsilon)
         r = coeff_reflexion_perpendiculaire(mur.epsilon,theta_i)
-        coeff_mur = polar(((1-pow(r,2))*cexp(-gamma*s))/(1-(pow(r,2)*cexp((-2*gamma*s)+(gamma*2*s*sin(theta_t)*sin(theta_i)))))[0]  #forme polaire
+        coeff_mur = ((1-pow(r,2))*cexp(-gamma*s))/(1-(pow(r,2)*cexp((-2*gamma*s)+(gamma*2*s*sin(theta_t)*sin(theta_i))))
         pt.set_coefficient_value(coeff_mur)
                           
 
@@ -97,7 +97,7 @@ def reflexion_coefficient(rayon):
         Z1 = sqrt(U0/EPS_0)
         Z2 = sqrt(U0/mur.epsilon)
         r = coeff_reflexion_perpendiculaire(mur.epsilon,theta_i)
-        coeff_mur = polar(r + ((1-pow(r,2))* r *cexp(-2*gamma*s)*cexp(2*gamma*s*sin(theta_t)*sin(theta_i)))/(1-(pow(r,2)*cexp((-2*gamma*s)+(gamma*2*s*sin(theta_t)*sin(theta_i))))))[0]  #forme polaire
+        coeff_mur = r + ((1-pow(r,2))* r *cexp(-2*gamma*s)*cexp(2*gamma*s*sin(theta_t)*sin(theta_i)))/(1-(pow(r,2)*cexp((-2*gamma*s)+(gamma*2*s*sin(theta_t)*sin(theta_i)))))
         pt.set_coefficient_value(coeff_mur)
 
 
