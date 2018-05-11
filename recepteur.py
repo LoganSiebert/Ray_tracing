@@ -24,9 +24,9 @@ class Recepteur(object):
     def resistance(self):
         return self._ra
     
-    def get_hauteur_equivalente(self,theta=pi/2):
-        #En 2D theta est toujours egal a 90 degres
-        return -WAVELENGTH/pi*cos(pi/2*cos(theta))/(sin(theta)**2)
+    def get_hauteur_equivalente(self):
+        #En 2D theta egal a 90 degres
+        return -WAVELENGTH/pi
 
     def set_x(self,x):
         self._x = x
