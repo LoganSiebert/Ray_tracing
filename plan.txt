@@ -1,7 +1,8 @@
 DIMENSIONS 40 40
-EMETTEUR 6 4.5
+EMETTEUR 6 8
 RECEPTEUR 1 1
-#Murs exterieurs epaisseur 29, brique
+
+#Murs (brique) exterieurs, e=29cm
 M 1 0.29 0 0 4 0
 M 1 0.29 4 0 7 0
 M 1 0.29 7 0 9 0
@@ -28,7 +29,7 @@ M 1 0.29 0 40 30 40
 M 1 0.29 40 40 40 0
 M 1 0.29 40 0 20 0
 
-#Murs interieurs epaisseur 10, cloison
+#Murs (cloison) interieurs, e=10cm
 M 3 0.1 30 40 30 38
 M 3 0.1 32 38 32 40
 M 3 0.1 32 40 40 40
@@ -64,7 +65,7 @@ M 3 0.1 23 28 23 38
 M 3 0.1 33 29 33 36 
 M 3 0.1 29 33 36 33
 
-#Murs interieurs epaisseur 18, beton
+#Murs (béton) interieurs, e=18cm
 M 2 0.18 0 3 3 3
 M 2 0.18 4 0 4 3
 M 2 0.18 7 0 7 3
