@@ -73,7 +73,7 @@ def transmission_coefficient(rayon):
                           
 
 ####################
-#    Réflection    #
+#    Réflexion    #
 ####################
 
 def reflexion_coefficient(rayon):
